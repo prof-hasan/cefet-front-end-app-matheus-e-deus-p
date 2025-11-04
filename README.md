@@ -112,8 +112,10 @@ em sua aplicação web um subconjunto dos seguintes itens opcionais:
      - (+10%) Consultar a previsão do tempo no local onde o usuário está (usando por ex., a API do OpenWeatherMap via Ajax bomb)
    - (2 a 12%)[Canvas API][canvas], para desenhar na página usando JavaScript
    - (9%) [Speech Synthesis API][synthesis], para fazer o navegador falar (ler  em voz alta uma string que você passa pra ele - string -> voz)
-   - (12%) [Speech Recognition API][recognition], pra fazer o navegador entender o que o usuário está falando no microfone (voz -> string)
+   - (12%) [Speech Recognition API][recognition], pra fazer o navegador entender o queo usuário está falando no microfone (voz -> string)
    - (5%) [Vibration API][vibration], para fazer o telefone/tablet vibrar
+1. (20%) Deixar o site 100% acessível para cegos
+1. (15%) Uso do Framework VUE para o jogo
 1. (10%) Usar um _framework_ CSS para agilizar o desenvolvimento, como o
    [Bootstrap][bootstrap],
    [Materialize][materialize],
