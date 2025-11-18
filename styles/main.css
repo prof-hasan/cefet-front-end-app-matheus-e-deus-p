@@ -82,54 +82,87 @@ a:active {
   width: 180px;
   height: 250px;
   background-size: contain;
-  transform: scaleY(-1);
+  position: relative;
 }
 
 .foto {
   position: relative;
   display: auto;
-  height: 100px;
-  width: 100px;
+  top: 12px;
+  left: 18px;
+  width: 150px;
+}
+
+.posicao {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+}
+
+.overall {
+  position: absolute;
+  top: 55px;
+  left: 20px;
+}
+
+.bandeira {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: 170px;
+  left: 20px;
+}
+
+.liga {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: 170px;
+  left: 100px;
 }
 
 main {
   background-color: #c0c0c067;
-  border-radius: 15%;
+  border-radius: 5%;
   display: flex;
   justify-content: center;
-  width: 100%
+  width: 90%;
+  margin: auto;
 }
 
 #campo {
   display: grid;
-  grid-template-columns: repeat(5, 500px);
-  grid-template-rows: 150px 100px 150px 70px 150px 80px 150px 100px 400px;
-  transform: scaleY(-1);
+  grid-template-columns: repeat(5, 250px);
+  grid-template-rows: 150px 1fr 150px 1fr 150px 1fr 150px 2fr 400px;
+  padding: 50px;
+  justify-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 #gk {
   grid-column: 3;
-  grid-row: 1;
+  grid-row: 9;
 }
 
 #zga {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 7;
 }
 
 #zgb {
   grid-column: 4;
-  grid-row: 3;
+  grid-row: 7;
 }
 
 #laa {
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 7;
 }
 
 #lab {
   grid-column: 5;
-  grid-row: 3;
+  grid-row: 7;
 }
 
 #cmd {
@@ -139,25 +172,25 @@ main {
 
 #cma {
   grid-column: 2;
-  grid-row: 7;
+  grid-row: 3;
 }
 
 #cmb {
   grid-column: 4;
-  grid-row: 7;
+  grid-row: 3;
 }
 
 #pe {
   grid-column: 1;
-  grid-row: 9;
+  grid-row: 1;
 }
 
 #pd {
   grid-column: 5;
-  grid-row: 9;
+  grid-row: 1;
 }
 
 #at {
   grid-column: 3;
-  grid-row: 9;
+  grid-row: 1;
 }

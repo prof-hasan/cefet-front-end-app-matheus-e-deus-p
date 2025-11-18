@@ -54,7 +54,7 @@ const jogadores = [
             {
                 nome: "Donnaruma",
                 overall: 90,
-                time: "Manchester City",
+                time: "Man City",
                 liga: "prl",
                 pais: "it",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/230621.png?fm=png&ixlib=java-2.1.0&verzion=1&w=512&s=589b7d85cdb178ec8f9f4d7b4d9b5215",
@@ -127,30 +127,182 @@ const jogadores = [
         ]
 
 
-    }
+    },
     {
         posicao: "zagueiro", 
 
         jogadores: [
             {
-                nome: "",
-                overall: ~,
-                time: "",
-                liga: "",
-                pais: "",
-                foto: "",
-            }
+                nome: "Cubarsi",
+                overall: 89,
+                time: "Barcelona",
+                liga: "lal",
+                pais: "es",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Araujo",
+                overall: 88,
+                time: "Barcelona",
+                liga: "lal",
+                pais: "uy",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Huijsen",
+                overall: 87,
+                time: "Real Madrid",
+                liga: "lal",
+                pais: "es",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Rudiger",
+                overall: 88,
+                time: "Real Madrid",
+                liga: "lal",
+                pais: "de",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Gvardiol",
+                overall: 88,
+                time: "Man City",
+                liga: "prl",
+                pais: "hr",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Pacho",
+                overall: 86,
+                time: "Paris",
+                liga: "li1",
+                pais: "co",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Pavard",
+                overall: 85,
+                time: "Inter",
+                liga: "sra",
+                pais: "fr",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Bastoni",
+                overall: 87,
+                time: "Inter",
+                liga: "sra",
+                pais: "it",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Van Dijk",
+                overall: 91,
+                time: "Liverpool",
+                liga: "prl",
+                pais: "nl",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Tah",
+                overall: 87,
+                time: "Leverkusen",
+                liga: "bun",
+                pais: "de",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Marquinhos",
+                overall: 87,
+                time: "Paris",
+                liga: "li1",
+                pais: "br",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Saliba",
+                overall: 88,
+                time: "Arsenal",
+                liga: "prl",
+                pais: "fr",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Ruben Dias",
+                overall: 90,
+                time: "Man City",
+                liga: "prl",
+                pais: "br",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Van De Ven",
+                overall: 87,
+                time: "Tottenham",
+                liga: "prl",
+                pais: "nl",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Romero",
+                overall: 90,
+                time: "Tottenham",
+                liga: "prl",
+                pais: "ar",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Upamecano",
+                overall: 86,
+                time: "Bayern",
+                liga: "bun",
+                pais: "fr",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Kim Min Jae",
+                overall: 87,
+                time: "Bayern",
+                liga: "bun",
+                pais: "kr",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Dante",
+                overall: 83,
+                time: "Nice",
+                liga: "li1",
+                pais: "br",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Hummels",
+                overall: 84,
+                time: "Dortmund",
+                liga: "bun",
+                pais: "de",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
+            {
+                nome: "Gimenez",
+                overall: 88,
+                time: "Atletico Madrid",
+                liga: "lal",
+                pais: "uy",
+                foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
+            },
         ]
 
 
-    }
+    },
     {
         posicao: "lateral", 
 
         jogadores: [
             {
                 nome: "",
-                overall: ~,
+                overall: "",
                 time: "",
                 liga: "",
                 pais: "",
@@ -159,14 +311,14 @@ const jogadores = [
         ]
 
 
-    }
+    },
     {
         posicao: "meiocampo", 
 
         jogadores: [
             {
                 nome: "",
-                overall: ~,
+                overall: "",
                 time: "",
                 liga: "",
                 pais: "",
@@ -175,14 +327,14 @@ const jogadores = [
         ]
 
 
-    }
+    },
     {
         posicao: "ponta", 
 
         jogadores: [
             {
                 nome: "",
-                overall: ~,
+                overall: "",
                 time: "",
                 liga: "",
                 pais: "",
@@ -191,14 +343,14 @@ const jogadores = [
         ]
 
 
-    }
+    },
     {
         posicao: "atacante", 
 
         jogadores: [
             {
                 nome: "",
-                overall: ~,
+                overall: "",
                 time: "",
                 liga: "",
                 pais: "",
