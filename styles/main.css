@@ -1,0 +1,163 @@
+body {
+    background-image: url("../imgs/imagem_fundo.png");
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: "PT Sans Narrow";
+    font-size: 50px;
+}
+
+header {
+    background: linear-gradient(to right, #ffd426, #eaff00, #ffd426);
+    animation: moverDegrade 4s infinite alternate;
+    background-size: 200% 200%;
+}
+
+@keyframes moverDegrade {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+ul {
+    text-align: center;
+    gap: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    justify-content: center;
+    font-family: "Teko";
+    font-size: 30px;
+}
+
+
+
+a:link {
+  color: purple;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkgoldenrod;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+  text-decoration: underline;
+}
+
+.pt-sans-narrow-regular {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-narrow-bold {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.carta {
+  background-image: url("../imgs/carta.png");
+  width: 180px;
+  height: 250px;
+  background-size: contain;
+  transform: scaleY(-1);
+}
+
+.foto {
+  position: relative;
+  display: auto;
+  height: 100px;
+  width: 100px;
+}
+
+main {
+  background-color: #c0c0c067;
+  border-radius: 15%;
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+
+#campo {
+  display: grid;
+  grid-template-columns: repeat(5, 500px);
+  grid-template-rows: 150px 100px 150px 70px 150px 80px 150px 100px 400px;
+  transform: scaleY(-1);
+}
+
+#gk {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#zga {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#zgb {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+#laa {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#lab {
+  grid-column: 5;
+  grid-row: 3;
+}
+
+#cmd {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+#cma {
+  grid-column: 2;
+  grid-row: 7;
+}
+
+#cmb {
+  grid-column: 4;
+  grid-row: 7;
+}
+
+#pe {
+  grid-column: 1;
+  grid-row: 9;
+}
+
+#pd {
+  grid-column: 5;
+  grid-row: 9;
+}
+
+#at {
+  grid-column: 3;
+  grid-row: 9;
+}
