@@ -26,6 +26,8 @@ for(let cartaAtual of cartasEl) {
         telaSelecaoEl.classList.remove('tela-nao-selecionada');        
         telaSelecaoEl.classList.add('tela-selecionada');
 
+        const posicaoCarta = cartaAtual.querySelector('.posicao').textContent;
+        criaCartas(posicao);
 
 
 
@@ -33,19 +35,61 @@ for(let cartaAtual of cartasEl) {
 }
 
 function criaCartas(posicao) {
+    let posicaoEl;
     switch (posicao) {
-        case: 
+        case "gk":
+            posicaoEl = 0;
+            break;
+        case "zg":
+            posicaoEl = 1;
+            break;
+        case "lat":
+            posicaoEl = 2;
+            break;
+        case "cdm":
+            posicaoEl = 3;
+            break;
+        case "cm":
+            posicaoEl = 4;
+            break;
+        case "pe":
+            posicaoEl = 5;
+            break;
+        case "pd":
+            posicaoEl = 6;
+            break;
+        case "ata":
+            posicaoEl = 7;
+            break;
     }
     
     
     const cartasEscolhiveis = document.querySelectorAll(".cartas-escolha");
-    
+
+    // aleatoriza 5 digitos
     let vetor = [];
-    for(let i = 0; i < jogadores[]; i++) {
-        vetor[i] = Math.floor(Math.random() * (4 - 0) + 0);
+    for(let i = 0; vetor.length < 5; i++) {
+        let tamanho = jogadores[posicaoEl].jogadoresPosicao.length;
+        const numAleatorio = Math.floor(Math.random() * tamanho) + 1;
+        if(!resultado.includes(numAleatorio)) {
+            vetor.push(numAleatorio);
+        }
     }
     
-    for (let cartaEscolhivelAtual of cartasEscolhiveis) {
-        
+    for (let i =0 ; i < 5; i++) {
+        let overallEl = cartaEscolhivelAtual.querySelector('.overall');
+        let posicaoEl = cartaEscolhivelAtual.querySelector('.posicao');
+        let bandeiraEl = cartaEscolhivelAtual.querySelector('.bandeira');
+        let ligaEl = cartaEscolhivelAtual.querySelector('.liga');
+        let fotoEl = cartaEscolhivelAtual.querySelector('.foto');
+        let timeEl = cartaEscolhivelAtual.querySelector('.time');
+        let nomeEl = cartaEscolhivelAtual.querySelector('.nome');
+        // ^ cartas atuais 
+        overallEl.innerHTML = jogadores[posicaoEl].jogadoresPosicao[vetor[i]].overall;
+        posicaoEl.innerHTML = posicao;
+        bandeiraEl.src = "https://flagsapi.com/"+jogadores[posicaoEl].jogadoresPosicao[vetor[i]].pais+"/flat/64.png"
+        timeEl.innerHTML = jogadores[posicaoEl].jogadoresPosicao[vetor[i]].time;
+        fotoEl.src = jogadores[posicaoEl].jogadoresPosicao[vetor[i]].foto;
+        cartaEscolhivelAtual.style.backgroundImage = url("imgs/"))
     }
 }

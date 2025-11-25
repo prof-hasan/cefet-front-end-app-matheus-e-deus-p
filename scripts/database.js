@@ -2,13 +2,13 @@ const jogadores = [
     {
         posicao: "goleiro", 
 
-        jogadores: [
+        jogadoresPosicao: [
             {
                 nome: "Alisson",
                 overall: 91,
                 time: "Liverpool",
                 liga: "prl",
-                pais: "br",
+                pais: "BR",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -16,7 +16,7 @@ const jogadores = [
                 overall: 88,
                 time: "Bayern",
                 liga: "bun",
-                pais: "de",
+                pais: "DE",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/167495.png?fm=png&ixlib=java-2.1.0&verzion=1&w=162&s=843ea056bd21de97ad1c7d797c7448df",
             },
             {
@@ -24,7 +24,7 @@ const jogadores = [
                 overall: 86,
                 time: "Aston Villa",
                 liga: "prl",
-                pais: "ar",
+                pais: "AR",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/202811.png?fm=png&ixlib=java-2.1.0&verzion=1&w=512&s=7085a21d2bdfc5d92047e8e54025fc70",
             },
             {
@@ -32,7 +32,7 @@ const jogadores = [
                 overall: 91,
                 time: "Real Madrid",
                 liga: "lal",
-                pais: "be",
+                pais: "BE",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/192119.png?fm=png&ixlib=java-2.1.0&verzion=1&w=512&s=9e2b685d49d90c141b63266865d980dd",
             },
             {
@@ -40,7 +40,7 @@ const jogadores = [
                 overall: 87,
                 time: "Barcelona",
                 liga: "lal",
-                pais: "de",
+                pais: "DE",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/192448.png?fm=png&ixlib=java-2.1.0&verzion=1&w=162&s=1b3f7a672fee3ec0dd4fdff0ed0bdc17",
             },
             {
@@ -48,7 +48,7 @@ const jogadores = [
                 overall: 90,
                 time: "Atletico Madrid",
                 liga: "lal",
-                pais: "si",
+                pais: "SI",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/200389.png?fm=png&ixlib=java-2.1.0&verzion=1&w=162&s=71d94a2a6bb981c537eb69d215902737",
             },
             {
@@ -56,7 +56,7 @@ const jogadores = [
                 overall: 90,
                 time: "Man City",
                 liga: "prl",
-                pais: "it",
+                pais: "IT",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/230621.png?fm=png&ixlib=java-2.1.0&verzion=1&w=512&s=589b7d85cdb178ec8f9f4d7b4d9b5215",
             },
             {
@@ -64,7 +64,7 @@ const jogadores = [
                 overall: 85,
                 time: "Dortmund",
                 liga: "bun",
-                pais: "ch",
+                pais: "CH",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/235073.png?fm=png&ixlib=java-2.1.0&verzion=1&w=162&s=aa118437b5e532f53960b484169ea546",
             },
             {
@@ -72,7 +72,7 @@ const jogadores = [
                 overall: 85,
                 time: "Inter",
                 liga: "sra",
-                pais: "ch",
+                pais: "CH",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/177683.png?fm=png&ixlib=java-2.1.0&verzion=1&w=162&s=a8b084faa61a09b84054fc7627a9657a",
             },
             {
@@ -80,7 +80,7 @@ const jogadores = [
                 overall: 88,
                 time: "Liverpool",
                 liga: "prl",
-                pais: "ge",
+                pais: "GE",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/262621.png?fm=png&ixlib=java-2.1.0&verzion=1&w=512&s=4429a46b091760b4b35d07648006a7e3",
             },
             {
@@ -88,7 +88,7 @@ const jogadores = [
                 overall: 88,
                 time: "Tottenham",
                 liga: "prl",
-                pais: "it",
+                pais: "IT",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/240091.png?fm=png&ixlib=java-2.1.0&verzion=1&w=512&s=bcc4a7ab46d9bbe71632b334e827afc6",
             },
             {
@@ -96,7 +96,7 @@ const jogadores = [
                 overall: 86,
                 time: "Arsenal",
                 liga: "prl",
-                pais: "br",
+                pais: "BR",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/220901.png?fm=png&ixlib=java-2.1.0&verzion=1&w=512&s=65586ceeb04ad540e6a305ea52441ac9",
             },
             {
@@ -104,7 +104,7 @@ const jogadores = [
                 overall: 84,
                 time: "Bilbao",
                 liga: "lal",
-                pais: "es",
+                pais: "ES",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/230869.png?fm=png&ixlib=java-2.1.0&verzion=1&w=512&s=8e3b3ad002c63d0039cb6ef233910f4f",
             },
             {
@@ -112,7 +112,7 @@ const jogadores = [
                 overall: 83,
                 time: "Real Madrid",
                 liga: "lal",
-                pais: "ua",
+                pais: "UA",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/243952.png?fm=png&ixlib=java-2.1.0&verzion=1&w=512&s=3bc7b2a925e1f5698c01094d67fd8c72",
             },
             {
@@ -120,7 +120,7 @@ const jogadores = [
                 overall: 84,
                 time: "Everton",
                 liga: "prl",
-                pais: "gb-eng",
+                pais: "GB",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/204935.png?fm=png&ixlib=java-2.1.0&verzion=1&w=162&s=41e0d9546a175e960a9a3b60b918bf9b",
             },
             
@@ -128,6 +128,8 @@ const jogadores = [
 
 
     },
+
+
     {
         posicao: "zagueiro", 
 
@@ -137,7 +139,7 @@ const jogadores = [
                 overall: 89,
                 time: "Barcelona",
                 liga: "lal",
-                pais: "es",
+                pais: "ES",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -145,7 +147,7 @@ const jogadores = [
                 overall: 88,
                 time: "Barcelona",
                 liga: "lal",
-                pais: "uy",
+                pais: "UY",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -153,7 +155,7 @@ const jogadores = [
                 overall: 87,
                 time: "Real Madrid",
                 liga: "lal",
-                pais: "es",
+                pais: "ES",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -161,7 +163,7 @@ const jogadores = [
                 overall: 88,
                 time: "Real Madrid",
                 liga: "lal",
-                pais: "de",
+                pais: "DE",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -169,7 +171,7 @@ const jogadores = [
                 overall: 88,
                 time: "Man City",
                 liga: "prl",
-                pais: "hr",
+                pais: "HR",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -177,7 +179,7 @@ const jogadores = [
                 overall: 86,
                 time: "Paris",
                 liga: "li1",
-                pais: "co",
+                pais: "CO",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -185,7 +187,7 @@ const jogadores = [
                 overall: 85,
                 time: "Inter",
                 liga: "sra",
-                pais: "fr",
+                pais: "FR",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -193,7 +195,7 @@ const jogadores = [
                 overall: 87,
                 time: "Inter",
                 liga: "sra",
-                pais: "it",
+                pais: "IT",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -201,7 +203,7 @@ const jogadores = [
                 overall: 91,
                 time: "Liverpool",
                 liga: "prl",
-                pais: "nl",
+                pais: "NL",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -209,7 +211,7 @@ const jogadores = [
                 overall: 87,
                 time: "Leverkusen",
                 liga: "bun",
-                pais: "de",
+                pais: "DE",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -217,7 +219,7 @@ const jogadores = [
                 overall: 87,
                 time: "Paris",
                 liga: "li1",
-                pais: "br",
+                pais: "BR",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -225,7 +227,7 @@ const jogadores = [
                 overall: 88,
                 time: "Arsenal",
                 liga: "prl",
-                pais: "fr",
+                pais: "FR",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -233,7 +235,7 @@ const jogadores = [
                 overall: 90,
                 time: "Man City",
                 liga: "prl",
-                pais: "br",
+                pais: "BR",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -241,7 +243,7 @@ const jogadores = [
                 overall: 87,
                 time: "Tottenham",
                 liga: "prl",
-                pais: "nl",
+                pais: "NL",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -249,7 +251,7 @@ const jogadores = [
                 overall: 90,
                 time: "Tottenham",
                 liga: "prl",
-                pais: "ar",
+                pais: "AR",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -257,7 +259,7 @@ const jogadores = [
                 overall: 86,
                 time: "Bayern",
                 liga: "bun",
-                pais: "fr",
+                pais: "FR",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -265,7 +267,7 @@ const jogadores = [
                 overall: 87,
                 time: "Bayern",
                 liga: "bun",
-                pais: "kr",
+                pais: "KR",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -273,7 +275,7 @@ const jogadores = [
                 overall: 83,
                 time: "Nice",
                 liga: "li1",
-                pais: "br",
+                pais: "BR",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -281,7 +283,7 @@ const jogadores = [
                 overall: 84,
                 time: "Dortmund",
                 liga: "bun",
-                pais: "de",
+                pais: "DE",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
             {
@@ -289,7 +291,7 @@ const jogadores = [
                 overall: 88,
                 time: "Atletico Madrid",
                 liga: "lal",
-                pais: "uy",
+                pais: "UY",
                 foto: "https://ratings-images-prod.pulse.ea.com/FC25/full/player-portraits/p212831.png?padding=0.7",
             },
         ]
