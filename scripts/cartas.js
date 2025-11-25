@@ -12,19 +12,40 @@ const pontaB = document.querySelector("#pd");
 const atacante = document.querySelector("#at");
 // Cartas Individuais ^
 const cartasEl = document.querySelectorAll(".carta");
-const zagueirosEl = document.querySelectorAll(".zagueirosEl");
-const meiosEl = document.qu
+
+
+const telaSelecaoEl = document.querySelector("#escolher-carta");
 
 for(let cartaAtual of cartasEl) {
-    const estaSelecionado = cartaAtual.classList.contains(selecionada)
     cartaAtual.addEventListener("click", function(e) {
+            
+        const estaSelecionado = cartaAtual.classList.contains("selecionada");
         if (estaSelecionado) {
             return;
         }
-        
+        telaSelecaoEl.classList.remove('tela-nao-selecionada');        
+        telaSelecaoEl.classList.add('tela-selecionada');
+
+
+
+
     });
 }
 
-function criaCartas("posicao") {
-
+function criaCartas(posicao) {
+    switch (posicao) {
+        case: 
+    }
+    
+    
+    const cartasEscolhiveis = document.querySelectorAll(".cartas-escolha");
+    
+    let vetor = [];
+    for(let i = 0; i < jogadores[]; i++) {
+        vetor[i] = Math.floor(Math.random() * (4 - 0) + 0);
+    }
+    
+    for (let cartaEscolhivelAtual of cartasEscolhiveis) {
+        
+    }
 }

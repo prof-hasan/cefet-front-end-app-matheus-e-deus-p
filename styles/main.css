@@ -1,3 +1,10 @@
+html {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
     background-image: url("../imgs/imagem_fundo.png");
     margin: 0;
@@ -10,14 +17,29 @@ body {
 
 h1 {
     text-align: center;
-    font-family: "PT Sans Narrow";
+    font-family: "ea-font";
     font-size: 50px;
+    color:#776314;
+    letter-spacing: 1px;
+}
+
+h1 strong {
+  font-family: "ea-logo";
+  font-size: 100px;
+  color: white;
 }
 
 header {
     background: linear-gradient(to right, #ffd426, #eaff00, #ffd426);
     animation: moverDegrade 4s infinite alternate;
     background-size: 200% 200%;
+}
+
+#rodape {
+  font-family: "ea-font";
+  font-size: large;
+  margin: 10px;
+  color: white;
 }
 
 @keyframes moverDegrade {
@@ -27,6 +49,18 @@ header {
   100% {
     background-position: right;
   }
+}
+
+@font-face {
+  font-family: "ea-font";
+  src: url("../fonts/fontfifa.ttf") format("woff2");
+  src: url("../fonts/fontfifa.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "ea-logo";
+  src: url("../fonts/EA\ Logo.ttf") format("woff2");
+  src: url("../fonts/EA\ Logo.ttf") format("woff");
 }
 
 ul {
@@ -93,23 +127,48 @@ a:active {
   width: 150px;
 }
 
+.nome {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "ea-font";
+  text-align: center;
+
+}
+
+.time {
+  position: absolute;
+  flex: 1;
+  text-align: center;
+  top: 190px;
+  left: 64px;
+  right: 60px;
+  white-space: normal;
+  overflow: visible;
+  text-align: center;
+  font-family: "ea-font";
+}
+
 .posicao {
   position: absolute;
   top: 35px;
   left: 20px;
+  font-family: "ea-font";
 }
 
 .overall {
   position: absolute;
   top: 55px;
   left: 20px;
+  font-family: "ea-font";
 }
 
 .bandeira {
   position: absolute;
   width: 40px;
   height: 30px;
-  top: 170px;
+  top: 190px;
   left: 20px;
 }
 
@@ -117,8 +176,8 @@ a:active {
   position: absolute;
   width: 40px;
   height: 30px;
-  top: 170px;
-  left: 100px;
+  top: 190px;
+  left: 120px;
 }
 
 main {
@@ -126,7 +185,7 @@ main {
   border-radius: 5%;
   display: flex;
   justify-content: center;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
@@ -193,4 +252,17 @@ main {
 #at {
   grid-column: 3;
   grid-row: 1;
+}
+
+
+.tela-nao-selecionada {
+  display: none;
+}
+
+.tela-selecionada {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: auto;
 }
