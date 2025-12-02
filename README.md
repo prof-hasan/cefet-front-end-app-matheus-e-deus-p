@@ -173,13 +173,17 @@ Alguns descuidos podem fazer com que sua nota fique muito abaixo do esperado:
 
 ## O que deve ser **entregue**
 
+Você deve publicar esse site usando [GitHub pages](https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-github-pages-site). Ou seja, vá em configurações, "Pages" e defina a branch principal como a branch do github pages. 
 Você deve publicar esse site usando [GitHub pages](https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-github-pages-site). Ou seja, vá em configurações, "Pages" e defina a branch principal como a branch do github pages. Além disso, você deve criar uma página `itens_opcionais.html` para demonstrar os itens opcionais.
 
 
-**Título da página**
+**Título do tópico**
+
+Grupo 05 - BioHazard
 
 **Conteúdo do tópico**
-_URL do site:_ https://usuario.github.io/meugrupo/
+
+_URL do site:_ https://usuario.github.io/biohazard/
 _Integrantes:_
 1. Arzimar da Silva Costa
 1. Frederico Aleixo Alencar
@@ -191,7 +195,10 @@ _Itens opcionais implementados (conforme enunciado):_
 - (até +5%) jQuery
 - (+7%) Usar AJAX para buscar algum tipo de dados
 
+**Anexos da postagem**
+
 _(colocar evidências que comprovem os itens opcionais implementados, se necessário - ex: repositório no github...)_
+
 
 
 

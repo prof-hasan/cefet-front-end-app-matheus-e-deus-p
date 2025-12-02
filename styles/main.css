@@ -1,0 +1,272 @@
+html {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    background-image: url("../imgs/imagem_fundo.png");
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: "ea-font";
+    font-size: 50px;
+    color:#776314;
+    letter-spacing: 1px;
+}
+
+h1 strong {
+  font-family: "ea-logo";
+  font-size: 100px;
+  color: white;
+}
+
+header {
+    background: linear-gradient(to right, #ffd426, #eaff00, #ffd426);
+    animation: moverDegrade 4s infinite alternate;
+    background-size: 200% 200%;
+}
+
+#rodape {
+  font-family: "ea-font";
+  font-size: large;
+  margin: 10px;
+  color: white;
+}
+
+@keyframes moverDegrade {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@font-face {
+  font-family: "ea-font";
+  src: url("../fonts/fontfifa.ttf") format("woff2");
+  src: url("../fonts/fontfifa.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "ea-logo";
+  src: url("../fonts/EA\ Logo.ttf") format("woff2");
+  src: url("../fonts/EA\ Logo.ttf") format("woff");
+}
+
+ul {
+    text-align: center;
+    gap: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    justify-content: center;
+    font-family: "Teko";
+    font-size: 30px;
+}
+
+
+
+a:link {
+  color: purple;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkgoldenrod;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+  text-decoration: underline;
+}
+
+.pt-sans-narrow-regular {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-narrow-bold {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.carta {
+  background-image: url("../imgs/carta.png");
+  width: 180px;
+  height: 250px;
+  background-size: contain;
+  position: relative;
+}
+
+.foto {
+  position: relative;
+  display: auto;
+  top: 12px;
+  left: 18px;
+  width: 150px;
+}
+
+.nome {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "ea-font";
+  text-align: center;
+
+}
+
+.time {
+  position: absolute;
+  flex: 1;
+  text-align: center;
+  top: 190px;
+  left: 64px;
+  right: 60px;
+  white-space: normal;
+  overflow: visible;
+  text-align: center;
+  font-family: "ea-font";
+}
+
+.posicao {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  font-family: "ea-font";
+}
+
+.overall {
+  position: absolute;
+  top: 55px;
+  left: 20px;
+  font-family: "ea-font";
+}
+
+.bandeira {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: 190px;
+  left: 20px;
+}
+
+.liga {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: 190px;
+  left: 120px;
+}
+
+main {
+  background-color: #c0c0c067;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: auto;
+}
+
+#campo {
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  grid-template-rows: 150px 1fr 150px 1fr 150px 1fr 150px 2fr 400px;
+  padding: 50px;
+  justify-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#gk {
+  grid-column: 3;
+  grid-row: 9;
+}
+
+#zga {
+  grid-column: 2;
+  grid-row: 7;
+}
+
+#zgb {
+  grid-column: 4;
+  grid-row: 7;
+}
+
+#laa {
+  grid-column: 1;
+  grid-row: 7;
+}
+
+#lab {
+  grid-column: 5;
+  grid-row: 7;
+}
+
+#cmd {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+#cma {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#cmb {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+#pe {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#pd {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+#at {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+
+.tela-nao-selecionada {
+  display: none;
+}
+
+.tela-selecionada {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: auto;
+}
+
+.cartas-escolha {
+  
+}
