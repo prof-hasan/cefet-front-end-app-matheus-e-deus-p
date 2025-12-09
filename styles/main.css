@@ -2,17 +2,20 @@ html {
   border: 0;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+
 }
 
 
 body {
-    background-image: url("../imgs/imagem_fundo.png");
+    background-image: url("../imgs/istockphoto-1223885180-612x612.jpg");
     margin: 0;
     padding: 0;
     border: 0;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -61,6 +64,12 @@ header {
   font-family: "ea-logo";
   src: url("../fonts/EA\ Logo.ttf") format("woff2");
   src: url("../fonts/EA\ Logo.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "ea-card";
+  src: url("../fonts/fontcarta.otf") format("woff2");
+  src: url("../fonts/fontcarta.otf") format("woff");
 }
 
 ul {
@@ -117,6 +126,7 @@ a:active {
   height: 250px;
   background-size: contain;
   position: relative;
+  color: rgba(72, 55, 18);
 }
 
 .foto {
@@ -134,34 +144,33 @@ a:active {
   transform: translateX(-50%);
   font-family: "ea-font";
   text-align: center;
-
+  white-space: nowrap;
+  color: rgba(72, 55, 18);
 }
 
 .time {
   position: absolute;
-  flex: 1;
-  text-align: center;
+  width: 40px;
+  height: 35px;
   top: 190px;
-  left: 64px;
-  right: 60px;
-  white-space: normal;
-  overflow: visible;
-  text-align: center;
-  font-family: "ea-font";
+  left: 70px;
 }
 
 .posicao {
   position: absolute;
-  top: 35px;
-  left: 20px;
+  top: 55px;
+  left: 23px;
   font-family: "ea-font";
+  font-size: 13px;
+  
 }
 
 .overall {
   position: absolute;
-  top: 55px;
+  top: 35px;
   left: 20px;
   font-family: "ea-font";
+  font-size: 20px;
 }
 
 .bandeira {
@@ -187,6 +196,7 @@ main {
   justify-content: center;
   width: 95%;
   margin: auto;
+  position: relative;
 }
 
 #campo {
@@ -197,6 +207,7 @@ main {
   justify-items: center;
   justify-content: center;
   gap: 30px;
+  margin-top: 40px;
 }
 
 #gk {
@@ -224,7 +235,7 @@ main {
   grid-row: 7;
 }
 
-#cmd {
+#cdm {
   grid-column: 3;
   grid-row: 5;
 }
@@ -260,13 +271,101 @@ main {
 }
 
 .tela-selecionada {
-  background-color: black;
-  width: 100vw;
-  height: 100vh;
+  background-color: #4A4A4A;
+  width: 99vw;
+  height: 65vh;
   z-index: 9999;
   display: auto;
 }
 
 .cartas-escolha {
+  width: 180px;
+  height: 250px;
+  background-image: url("../imgs/carta.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  display: none; 
+  margin: 10px;
+  color: rgba(72, 55, 18);
+}
+#escolher-carta {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+#escolher-carta > .cartas-escolha {
+  display: inline-block;
+}
+#linha {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 80px;
+}
+#texto-escolha {
+  font-family: "ea-font";
+  font-size: 40px;
+  color: white;
+}
+
+.linha {
+  width: 4px;
   
+}
+
+#cadastro {
+  background-color: #c0c0c067;
+  padding: 20px;
+  border: 40px;
+  margin: 40px;
+  border-radius: 3%;
+  font-family: ea-font;
+  color: white;
+  text-align: center;
+}
+
+button {
+  font-family: ea-font;
+  font-size: 50px;
+  color: white;
+}
+
+#pronto {
+  background-color: #4A4A4A;
+  position: relative;
+  left: 750px;
+  display: none;
+}
+
+#camisas {
+  position: relative;
+  left: 600px;
+  top: 20px;
+}
+
+#cadastro span {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.cadastro-palavras {
+  text-align:left;
+}
+
+#titulo-cadastro {
+  font-size: 50px;
+}
+
+.estrelas {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-top: 20px;
+}
+
+#estrelinhas {
+  display: flex;
+  position: relative;
+  left: 190px;
 }
