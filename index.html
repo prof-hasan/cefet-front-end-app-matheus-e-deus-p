@@ -76,12 +76,17 @@
         </nav>
     </header>
     <main>
-        <div id="estrelinhas"> 
-            <img id="estrela1" class="estrelas" src="imgs/estrelavazia.png">
-            <img id="estrela2" class="estrelas" src="imgs/estrelavazia.png">
-            <img id="estrela3" class="estrelas" src="imgs/estrelavazia.png">
-            <img id="estrela4" class="estrelas" src="imgs/estrelavazia.png">
-            <img id="estrela5" class="estrelas" src="imgs/estrelavazia.png">
+        <div id="container-estrelas">
+            <h2 id="overallH2">Classificacao do time</h2>
+            <h3 id="overallQntd">0</h3>
+            <div class="estrelas" id="estrelinhas"> 
+                
+                <img id="estrela1" src="imgs/estrelavazia.png">
+                <img id="estrela2" src="imgs/estrelavazia.png">
+                <img id="estrela3" src="imgs/estrelavazia.png">
+                <img id="estrela4" src="imgs/estrelavazia.png">
+                <img id="estrela5" src="imgs/estrelavazia.png">
+            </div>
         </div>
         <div id="campo">
             <div id="gk" class="carta goleiro">
@@ -185,13 +190,33 @@
             </div>
             
         </div>
+        <button id="entrosa-btn"><img id=entrosa-imagem src="imgs/entrosamento.png"></button>
     </main>
+    
+    <div id="entrosamento-painel">
+            <h2>Entrosamento do seu time</h2>
+            <span id="entrosamento-total">0</span>
+
+            <div class="sections-wrapper">
+                <section id="pais">
+                    <h4>Paises</h4>
+                </section>
+                <section id="liga">
+                    <h4>Ligas</h4>
+                </section>
+                <section id="time">
+                    <h4>Times</h4>
+                </section>
+                
+            </div>
+            <button id="fecha-entrosa">Fechar</button>
+    </div>
     
     <p id="rodape">Site feito por Matheus Batista Medeiros. <br>Mais informacoes em <a href="itens-adicionais.html">Mais</a></p>
 
 
 
-    <script src="scripts/cartas.js"></script>
+    <script type="module" src="scripts/cartas.js"></script>
     <script src="scripts/database.js"></script>
 </body>
 </html>

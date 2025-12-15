@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@100..900&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    
+    <h1><strong>Dream Team</strong></h1>
+    <div id="cadastro">
+        <span id="titulo-cadastro">Faca login</span><br><br><br>
+        <span class="cadastro-palavras">Nome</span><br>
+        <input type="text" id="nome-usuario" value=""><br><br>
+        <span class="cadastro-palavras">Senha</span><br>
+        <input type="password" id="senha-usuario" value="">
+    </div>
+    <button id="avanca-button">Avancar</button>
+    <script type="module">
+        import { initializeApp } 
+            from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+
+        import { getFirestore }
+            from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+
+        import { getAuth }
+            from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBUCalDFTxqK1SaDEeuuTnVPXtHuqI80PE",
+            authDomain: "dados---dream-team.firebaseapp.com",
+            projectId: "dados---dream-team",
+            storageBucket: "dados---dream-team.firebasestorage.app",
+            messagingSenderId: "151945803722",
+            appId: "1:151945803722:web:b070fccaf4f9a1549e4133",
+            measurementId: "G-68WG6DQ1VC"
+        };
+
+        // Inicializa Firebase UMA VEZ
+        window.app = initializeApp(firebaseConfig);
+        window.db = getFirestore(app);
+        window.auth = getAuth(app);
+    </script>
+
+    <script type="module" src="scripts/login.js"></script>
+
+</body>
+</html>

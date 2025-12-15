@@ -1186,7 +1186,7 @@ const jogadores = [
                 nome: "Endrick",
                 overall: "82",
                 time: "Real Madrid",
-                liga: "sra",
+                liga: "lal",
                 pais: "BR",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/272505.png?fm=png&ixlib=java-2.1.0&verzion=1&w=512&s=a7d6576e540e823a6b28ca09bb331e25",
                 timeimg: "https://upload.wikimedia.org/wikipedia/pt/9/98/Real_Madrid.png",
@@ -1207,7 +1207,7 @@ const jogadores = [
                 liga: "li1",
                 pais: "GA",
                 foto: "https://cdn3.futbin.com/content/fifa26/img/players/188567.png?fm=png&ixlib=java-2.1.0&w=162&s=f8bb06448a99d28dd1f6d97f860794fb",
-                timeimg: "",
+                timeimg: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Olympique_Marseille_logo.svg/960px-Olympique_Marseille_logo.svg.png",
             },
             {
                 nome: "Dzeko",

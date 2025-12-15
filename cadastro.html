@@ -3,31 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Team</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko&display=swap" rel="stylesheet">
     <link rel="icon" href="imgs/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@100..900&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    
+
 </head>
 <body>
     
     <h1><strong>Dream Team</strong></h1>
     <div id="cadastro">
-        <span id="titulo-cadastro">Cadastre se ou faca login</span><br>
+        <span id="titulo-cadastro">Cadastre se</span><br><br><br>
         <span class="cadastro-palavras">Nome</span><br>
-        <input type="text" id="nome-usuario" value=" ">
+        <input type="text" id="nome-usuario" value=""><br><br>
         <span class="cadastro-palavras">Senha</span><br>
-        <input type="password" id="senha-usuario" value=" ">
+        <input type="password" id="senha-usuario" value="">
         <div id="camisas">
-            <button id="anterior"></button>
-            <img id="camisa-escolhida" src="">
-            <button id="proximo"></button>
+            
+            <span id="instrucao-camisa">Faca sua camisa</span>
+            <div id="camisa-wrapper">
+                <img id="camisa-base" src="imgs/camisabaseimg.png">
+                <div id="cor-camisa"></div>
+            </div>
         </div>
-        <button id="pronto">Cadastrar</button>
+        <span id="numero-camisa">10</span>
+
+        <div id="escolher-camisas-inputs">
+        <span>Numero</span><br>
+        <input type="text" id="numero-camisa-input"><br><br>
+        <span>Cor</span><br>
+        <input type="color" id="escolhe-cor-camisa">
+        <span id="jatem"><a id="jatemlink" href="login.html">Já tem cadastro?</a></span>
     </div>
-    <script src="scripts/cartas.js"></script>
-    <script src="scripts/database.js"></script>
+
+    <button id="pronto">Cadastrar</button>
+    <script type="module">
+        import { initializeApp } 
+            from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+
+        import { getFirestore }
+            from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+
+        import { getAuth }
+            from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBUCalDFTxqK1SaDEeuuTnVPXtHuqI80PE",
+            authDomain: "dados---dream-team.firebaseapp.com",
+            projectId: "dados---dream-team",
+            storageBucket: "dados---dream-team.firebasestorage.app",
+            messagingSenderId: "151945803722",
+            appId: "1:151945803722:web:b070fccaf4f9a1549e4133",
+            measurementId: "G-68WG6DQ1VC"
+        };
+
+        
+        window.app = initializeApp(firebaseConfig);
+        window.db = getFirestore(app);
+        window.auth = getAuth(app);
+    </script>
+
+    <script type="module" src="scripts/cadastro.js"></script>
+
 </body>
 </html>
