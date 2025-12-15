@@ -1,0 +1,719 @@
+html {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.paragrafo {
+  font-family: "PT Sans Narrow";
+  font-size: 30px;
+  color: black;
+}
+
+body {
+    background-image: url("../imgs/istockphoto-1223885180-612x612.jpg");
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    font-family: "ea-font";
+    font-size: 50px;
+    color:#776314;
+    letter-spacing: 1px;
+}
+
+h1 strong {
+  font-family: "ea-logo";
+  font-size: 100px;
+  color: white;
+}
+
+header {
+    background: linear-gradient(to right, #ffd426, #eaff00, #ffd426);
+    animation: moverDegrade 4s infinite alternate;
+    background-size: 200% 200%;
+}
+
+#rodape {
+  font-family: "ea-font";
+  font-size: large;
+  margin: 10px;
+  color: white;
+}
+
+@keyframes moverDegrade {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+
+
+@font-face {
+  font-family: "ea-font";
+  src: url("../fonts/fontfifa.ttf") format("woff2");
+  src: url("../fonts/fontfifa.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "ea-logo";
+  src: url("../fonts/EA\ Logo.ttf") format("woff2");
+  src: url("../fonts/EA\ Logo.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "ea-card";
+  src: url("../fonts/fontcarta.otf") format("woff2");
+  src: url("../fonts/fontcarta.otf") format("woff");
+}
+
+ul {
+    text-align: center;
+    gap: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    justify-content: center;
+    font-family: "Teko";
+    font-size: 30px;
+}
+
+
+
+a:link {
+  color: purple;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkgoldenrod;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+  text-decoration: underline;
+}
+
+.pt-sans-narrow-regular {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-narrow-bold {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.carta {
+  background-image: url("../imgs/carta.png");
+  width: 180px;
+  height: 250px;
+  background-size: contain;
+  position: relative;
+  color: rgba(72, 55, 18);
+}
+
+.foto {
+  position: relative;
+  top: 12px;
+  left: 18px;
+  width: 150px;
+}
+
+.nome {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "ea-font";
+  text-align: center;
+  white-space: nowrap;
+  color: rgba(72, 55, 18);
+}
+
+.time {
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  top: 190px;
+  left: 70px;
+}
+
+.posicao {
+  position: absolute;
+  top: 55px;
+  left: 23px;
+  font-family: "ea-font";
+  font-size: 13px;
+  
+}
+
+.overall {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  font-family: "ea-font";
+  font-size: 20px;
+}
+
+.bandeira {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: 190px;
+  left: 20px;
+}
+
+.liga {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: 190px;
+  left: 120px;
+}
+
+main {
+  background-color: #c0c0c067;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  padding: 40px 0;
+  position: relative;
+}
+
+#campo {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  margin: 0 auto;
+  padding: 50px;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+#gk {
+  grid-column: 3;
+  grid-row: 9;
+}
+
+#zga {
+  grid-column: 2;
+  grid-row: 7;
+}
+
+#zgb {
+  grid-column: 4;
+  grid-row: 7;
+}
+
+#laa {
+  grid-column: 1;
+  grid-row: 7;
+}
+
+#lab {
+  grid-column: 5;
+  grid-row: 7;
+}
+
+#cdm {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+#cma {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#cmb {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+#pe {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#pd {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+#at {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+
+.tela-nao-selecionada {
+  display: none;
+}
+
+.tela-selecionada {
+  background-color: #4A4A4A;
+  width: 99vw;
+  height: 65vh;
+  z-index: 9999;
+}
+
+.cartas-escolha {
+  width: 180px;
+  height: 250px;
+  background-image: url("../imgs/carta.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  display: none; 
+  margin: 10px;
+  color: rgba(72, 55, 18);
+}
+#escolher-carta {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+#escolher-carta > .cartas-escolha {
+  display: inline-block;
+}
+#linha {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 80px;
+}
+#texto-escolha {
+  font-family: "ea-font";
+  font-size: 40px;
+  color: white;
+}
+
+
+.linha {
+  width: 4px;
+  
+}
+
+#cadastro {
+  background-color: #c0c0c067;
+  padding: 20px;
+  border: 40px;
+  margin: 40px;
+  border-radius: 3%;
+  font-family: ea-font;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+button {
+  font-family: ea-font;
+  font-size: 50px;
+  color: white;
+}
+
+#pronto {
+  background-color: #4A4A4A;
+  position: relative;
+  display: block;
+  right: 10px;
+}
+
+#avanca-button {
+  background-color: #4A4A4A;
+  position: absolute;
+  left: 50px;
+  top: 380px;
+  z-index: 999999;
+
+}
+
+
+
+#cadastro span {
+  color:#4A4A4A;
+  text-align: center;
+}
+
+.cadastro-palavras {
+  font-size: 20px;
+}
+
+#titulo-cadastro {
+  font-size: 50px;
+}
+
+#container-estrelas {
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+  width: max-content; 
+  flex-direction: column; 
+  align-items: center;    
+  display: flex;
+}
+
+#overallH2 {
+  font-family: "ea-font";
+  font-size: 22px;
+  padding: 0;
+  margin: 0 0 5px 0; 
+  color:#4A4A4A;
+  font-size: 40px;
+}
+
+#overallQntd {
+  font-family: "ea-font";
+  font-size: 22px;
+  padding: 0;
+  margin: 0 0 5px 0; 
+  color:#ffd426;
+  font-size: 30px;
+}
+
+.estrelas {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 5px;
+}
+
+.estrelas img {
+  width: 30px;
+  height: 30px;
+}
+
+
+input {
+  outline: none; 
+  border: none;  
+  background: transparent;
+  width: 250px;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-family: "PT Sans Narrow"; 
+  color: white; 
+  background-color: #00000080; 
+  border-radius: 8px;
+  border: 2px solid #ffffff50;
+  transition: 0.2s ease;
+
+}
+
+
+#camisa-base {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+
+#camisa-wrapper {
+  width: 130px;
+  height: 120px;
+  position: relative;
+}
+
+#cor-camisa {
+  position: absolute;
+  inset: 0;
+  background: red;
+  mask-image: url('../imgs/camisabaseimg.png');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+#jatem {
+  font-family: "PT Sans Narrow";
+  font-size: 30px;
+  position: absolute;
+  left: -1250px;
+  top: -80px;
+  font-weight: bolder;
+}
+
+#jatemlink:link {
+  color: white;
+}
+
+#jatemlink:visited {
+  color: white;
+}
+
+#jatemlink:hover {
+  color: white;
+}
+
+#camisas {
+  position: absolute;
+  left: 1500px;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#cadastro #instrucao-camisa {
+  font-size: 20px !important;
+  color: #4A4A4A;
+}
+
+#numero-camisa {
+  position: absolute;
+  font-size: 50px;
+  color: white !important;
+  top: 195px;
+  left: 1540px;
+}
+
+#numero-camisa-input {
+  width: 45px;
+}
+
+#escolher-camisas-inputs {
+  position: absolute;
+  left: 1300px;
+  top: 120px;
+}
+
+#escolhe-cor-camisa {
+  border: none;
+  width: 50px;
+  height: 40px;
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#escolhe-cor-camisa::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+#escolhe-cor-camisa::-webkit-color-swatch {
+  border-radius: 8px;
+  border: none;
+}
+
+
+#entrosamento-painel {
+  display: none;                    
+  position: fixed;                  
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85); 
+  z-index: 9999;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  font-family: "ea-font";
+  color: white;
+  text-align: center;
+  overflow-y: auto;                 
+  
+              
+}
+
+
+#entrosamento-painel.ativa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  gap: 90px;
+}
+
+
+
+
+
+.sections-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;                  
+}
+
+
+#entrosamento-painel section {
+  background-color: #4A4A4A;
+  padding: 30px;
+  border-radius: 12px;
+  min-width: 180px;
+  min-height: 150px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  color: white;
+  flex: 1;                           
+}
+
+
+
+#entrosamento-painel h2 {
+  font-size: 40px;
+  grid-column: 2;
+  text-align: center;
+}
+
+#entrosamento-painel h4 {
+  font-size: 30px;
+}
+
+#pais, #liga, #time {
+  position: static; 
+  top: auto;
+  grid-column: auto;
+}
+
+
+#entrosa-imagem {
+  width: 30px;
+  height: 30px;
+  opacity: 1 !important;
+}
+
+#entrosa-btn {
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  position: fixed;
+  top: 500px;
+  right: 100px;
+}
+
+.pais-pagina,
+.liga-pagina,
+.time-pagina {
+  display: flex;
+  align-items: center;
+  gap: 10px;          
+  margin-top: 12px;
+}
+
+.pais-pagina img:first-child,
+.liga-pagina img:first-child,
+.time-pagina img:first-child {
+  width: 40px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.marcacoes {
+  display: flex;
+  gap: 6px;
+}
+
+.bola-entrosa {
+  width: 26px;
+  height: 26px;
+  background-image: url("../imgs/marcacao.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+#entrosamento-total {
+  font-size: 30px;
+}
+
+
+#ranking {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 520px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#ranking li {
+  background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+  color: #fff;
+  margin-bottom: 1px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#ranking li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.45);
+}
+
+#ranking li strong {
+  color: #ffd700;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+#ranking li b {
+  color: #00ff9d;
+}
+
+.camisa-ranking {
+  position: relative;
+  width: 45px;
+  height: 45px;
+}
+
+.cor-camisa-ranking {
+  position: absolute;
+  inset: 0;
+  background: red; 
+  mask-image: url('../imgs/camisabaseimg.png');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  -webkit-mask-image: url('../imgs/camisabaseimg.png');
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+.numero-camisa {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: black;
+}
+
